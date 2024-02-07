@@ -47,7 +47,7 @@
     {{#uservisible}}
     <a
         class="courseindex-link text-truncate"
-        {{#url}} href="{{{url}}}" {{/url}}{{^url}} href="#{{{anchor}}}" data-anchor="true" {{/url}}
+        {{#url}} href="{{{url}}}" {{/url}}{{^url}} target="_blank" href="#{{{anchor}}}" data-anchor="true" {{/url}}
         data-for="cm_name"
         tabindex="-1"
     >
@@ -55,7 +55,7 @@
     </a>
     {{/uservisible}}
     {{^uservisible}}
-    <a class="courseindex-link text-truncate" href="#{{{anchor}}}" data-for="cm_name" tabindex="-1" data-anchor="true">
+    <a class="courseindex-link text-truncate" target="_blank" href="#{{{anchor}}}" data-for="cm_name" tabindex="-1" data-anchor="true">
         {{{name}}}
     </a>
     {{/uservisible}}
